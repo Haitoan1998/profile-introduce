@@ -1,17 +1,28 @@
-/**
-* Template Name: MyResume - v4.9.2
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  overflow         : overlay;
 }
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width        : 8px;
+  z-index      : 999999999999999;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius   : 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index         : 999999999999999;
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius   : 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
 
 a {
   color: #0563bb;
@@ -284,7 +295,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/profile-img.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -297,12 +308,13 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.35);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+  backdrop-filter: blur(20px);  
 }
 
 #hero h1 {
@@ -958,6 +970,9 @@ section {
   border-radius: 50%;
   border: 4px solid #fff;
   margin: 0 auto;
+  flex-shrink: 0;
+  height: 120px;
+  object-fit: cover;
 }
 
 .testimonials .testimonial-item h3 {
