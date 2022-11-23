@@ -313,13 +313,13 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-  backdrop-filter: blur(20px);  
+  backdrop-filter: blur(22px);  
 }
 
 #hero h1 {
@@ -353,6 +353,10 @@ h6 {
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
+}
+
+._2p3a{
+  width: 100% !important;  
 }
 
 #hero .social-links a:hover {
