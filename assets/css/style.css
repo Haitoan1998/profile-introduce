@@ -61,6 +61,10 @@ h6 {
   z-index: 99999;
 }
 
+.img-fluid{
+  border-radius: 6px;
+}
+
 .back-to-top i {
   font-size: 28px;
   color: #fff;
@@ -376,7 +380,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -669,6 +673,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
@@ -683,6 +689,12 @@ section {
   border-left: 3px solid #d7dce1;
   transition: all 0.5s ease 0s;
   z-index: 9994;
+}
+
+
+.jax-video{
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .portfolio .portfolio-wrap .portfolio-info::after {
